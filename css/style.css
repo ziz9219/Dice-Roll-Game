@@ -221,7 +221,8 @@ button {
 }
 
 button:hover {
-    font-weight: 600;
+    font-weight: 400;
+    color: #1c87c9;
 }
 
 button:hover i {
@@ -262,13 +263,28 @@ button:focus {
 
 /* Icons */
 
-i {
+.icon {
     color: #1c87c9;
     display: inline-block;
     margin-right: 15px;
     font-size: 32px;
     line-height: 1;
     vertical-align: text-top;
-    margin-top: -4px;
+    margin-top: -6px;
     transition: margin 0.3s;
+}
+
+.icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.icon.icon-repeat svg,
+.icon.icon-download svg {
+    width: 30px;
+    height: 30px;
+}
+
+.icon.icon.icon-download {
+    margin-top: -8px;
 }
