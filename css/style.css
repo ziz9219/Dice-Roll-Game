@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.main-container {
+    max-width: 1170px;
+}
+
+/* Wrapper */
+
+.wrapper {
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* PLAYERS */
+
+.player-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-name {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.player-score {
+    font-weight: 300;
+    color: #1c87c9;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.active {
+    background-color: #f7f7f7;
+}
+
+.active .player-name {
+    font-weight: 400;
+}
+
+.player-name::after {
+    content: "\2022";
+    font-size: 48px;
+    color: transparent;
+    vertical-align: baseline;
+}
+
+@media (min-width: 480px){
+
+    .player-name::after {
+        margin-left: 15px;
+    }
+}
+
+.active .player-name::after {
+    color: #1c87c9;
+}
+
+@media (min-width: 576){
+
+    .player-name {
+        font-weight: 100;
+    }
+
+    .active .player-name {
+        font-weight: 300;
+    }
+
+    .player-score {
+        font-weight: 100;
+    }
+}
+
+.player-current-box {
+    background-color: #1c87c9;
+    color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+@media (min-width: 480px){
+
+    .player-current-box {
+        width: 60%;
+    }
+}
+
+@media (min-width: 576px){
+
+    .player-current-box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px){
+
+    .player-current-box {
+        width: 40%;
+    }
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+}
+
+/* Dice images */
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 48px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+@media (min-width: 480px){
+
+    .dice {
+        height: 54px;
+    }
+}
+
+@media (min-width: 576px){
+
+    .dice {
+        height: 64px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .dice {
+        height: 70px;
+    }
+}
+
+@media (min-width: 992px){
+
+    .dice {
+        height: 80px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .dice {
+        height: 100px;
+    }
+}
+
+#dice1 {
+    top: 150px;
+}
+
+/* Winner status */ 
+
+.winner {
+    background-color: #f7f7f7;
+}
+
+.winner .player-name {
+    font-weight: 300;
+    color: #1c87c9;
+}
+
+/* Buttons */
+
+.button-wrapper {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    position: relative;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    font-weight: 600;
+}
+
+button:hover i {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Specific buttons */
+
+.button-new-wrapper {
+    top: 30px;
+}
+
+@media (min-width: 576){
+
+    .button-new-wrapper {
+        top: 40px;
+    }
+}
+
+.button-roll-wrapper {
+    bottom: 220px;
+}
+
+@media (min-width: 576){
+
+    .button-roll-wrapper {
+        bottom: 200px;
+    }
+}
+
+.button-hold-wrapper {
+    bottom: 40px;
+}
+
+/* Icons */
+
+i {
+    color: #1c87c9;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}

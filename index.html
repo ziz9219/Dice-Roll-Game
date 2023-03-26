@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- MetaTags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the page -->
+        <title>Lancer de dés</title>
+
+        <link rel="shortcut icon" type="image/png" href="./images/icons/favicon.png" />
+
+        <!-- Lato font-family -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,400,500,300,600" rel="stylesheet" type="text/css">
+
+        <!-- Ionic icons -->
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Css files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="main-container container-fluid">
+                <!-- begin::Title -->
+                <div class="d-flex align-items-center justify-content-center pt-3 pb-4">
+                    <h1 class="m-0">Lancer de dés</h1>
+                </div>
+                <!-- end::Title -->
+
+                <!-- begin:: -->
+                <div class="wrapper">
+                    <div class="row position-relative">
+                        <!-- begin::Player 1 panel -->
+                        <div class="col-6 col-sm-6">
+                            <div id="player1Panel" class="player-panel player-1-panel active py-5">
+                                <div id="name-1" class="player-name fs-3">Player 1</div>
+                                <div id="score-1" class="player-score fs-1">0</div>
+                                <div class="player-current-box mb-5">
+                                    <div class="player-current-label">Score</div>
+                                    <div class="player-current-score fs-3" id="current-1">11</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Player 1 panel -->
+
+                        <!-- begin::Player 2 panel -->
+                        <div class="col-6 col-sm-6">
+                            <div id="player2Panel" class="player-panel player-2-panel py-5">
+                                <div id="name-2" class="player-name fs-3">Player 2</div>
+                                <div id="score-2" class="player-score fs-1">0</div>
+                                <div class="player-current-box mb-5">
+                                    <div class="player-current-label">Score</div>
+                                    <div class="player-current-score fs-3" id="current-2">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end::Player 2 panel -->
+                    
+                        <div class="col-12">
+                            <!-- begin::Buttons -->
+                            <div class="button-wrapper button-new-wrapper">
+                                <button class="btn-new">
+                                    <i class="ion-ios-plus-outline"></i>
+                                    <span>New game</span>
+                                </button>
+                            </div>
+                            <div class="button-wrapper button-roll-wrapper">
+                                <button class="btn-roll">
+                                    <i class="ion-ios-loop"></i>
+                                    <span>Roll dice</span>
+                                </button>
+                            </div>
+                            <div class="button-wrapper button-hold-wrapper">
+                                <button class="btn-hold">
+                                    <i class="ion-ios-download-outline"></i>
+                                    <span>Hold</span>
+                                </button>
+                            </div>
+                            <!-- end::Buttons -->
+
+                            <!-- begin::Dice image -->
+                            <img id="dice1" class="dice" src="dice-5.png" alt="Dice">
+                            <!-- end::Dice image -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- JavaScript external files -->
+        <script src="./js/Game.js"></script>
+        <script src="./js/script.js"></script>
+        <!-- <script src="challenges.js"></script> -->
+    </body>
+</html>
